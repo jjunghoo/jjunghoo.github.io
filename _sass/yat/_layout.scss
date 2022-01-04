@@ -17,7 +17,7 @@ html {
 
       &.site-header {
         .site-brand-inner, .page-link {
-          color: #fff;
+          color: #000;
           transition: 0.1s color;
         }
 
@@ -569,7 +569,7 @@ html {
 .page-banner {
   display: block;
   position: relative;
-  height: $banner-height;
+  height: 25em;
   background-color: $banner-background;
   transition: height 0.2s;
 
