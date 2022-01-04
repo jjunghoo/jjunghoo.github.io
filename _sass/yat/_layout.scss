@@ -206,6 +206,7 @@ html {
 
     &:hover {
       color: lighten($a-color, 10%);
+      text-decoration: none;
     }
   }
 }
