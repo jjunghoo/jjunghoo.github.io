@@ -1,0 +1,102 @@
+I"�"<h1 id="react에서는-component끼리-데이터를-서로-주고-받을-때-props-와-state-를-활용할-수-있다">React에서는 <code class="language-plaintext highlighter-rouge">component</code>끼리 데이터를 서로 주고 받을 때 <code class="language-plaintext highlighter-rouge">props</code> 와 <code class="language-plaintext highlighter-rouge">state</code> 를 활용할 수 있다.<br /><br /></h1>
+
+<h2 id="props">Props</h2>
+
+<ul>
+  <li>부모 컴포넌트가 자식 컴포넌트에 값을 전달할 때 사용하는 것이다 <strong>(읽기 전용)</strong><br /><br /><br /></li>
+</ul>
+
+<h3 id="appjs">App.js</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">"</span><span class="s2">./styles.css</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Example1</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Example1</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Props</span> <span class="nx">예제</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Example1</span> <span class="nx">str</span><span class="o">=</span><span class="dl">"</span><span class="s2">테스트</span><span class="dl">"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example1 컴포넌트에 ‘테스트’ 라는 문자데이터를 str 이라는 이름으로 <code class="language-plaintext highlighter-rouge">props</code> 를 전달한다.
+<br /><br /><br /></p>
+
+<h3 id="example1jsx">Example1.jsx</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">sExample1</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="dl">"</span><span class="s2">{props.str}</span><span class="dl">"</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span><span class="p">};</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code> 태그 사이에 전달 받은 <code class="language-plaintext highlighter-rouge">props</code> 데이터를 입력을 해주면 props 데이터를 받아올 수 있다.
+<br /><br /><br /></p>
+
+<h3 id="결과">결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658183-462517c4-050a-4c8e-a5fa-247d2d00606a.png" alt="props_example" />
+<br /><br /><br /><br /><br /></p>
+
+<h2 id="state">State</h2>
+
+<ul>
+  <li>state는 컴포넌트 자기 자신이 가지고 있는 값이다.<br /></li>
+  <li>함수 컴포넌트에서는 <code class="language-plaintext highlighter-rouge">useState()</code> Hook을 이용해서 state를 생성할 수 있다.
+<br /><br /><br /></li>
+</ul>
+
+<h3 id="appjs-1">App.js</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">"</span><span class="s2">./styles.css</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Example2</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Example2</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Sate</span> <span class="nx">예제</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Example2</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /><br /><br /></p>
+
+<h3 id="example2jsx">Example2.jsx</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">Example2</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">state</span><span class="p">,</span> <span class="nx">setState</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">setState</span><span class="p">(</span><span class="nx">state</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Click</span><span class="o">!&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">state</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>위 예제에서는<br />
+<code class="language-plaintext highlighter-rouge">useState()</code> 를 이용해서 state 와 state 값을 변경시킬 수 있는 setState 함수를 만들었다. <br />
+<code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> 태그를 클릭하면 <code class="language-plaintext highlighter-rouge">setState</code> 함수가 호출이 되면서 <code class="language-plaintext highlighter-rouge">state</code> 값에 변화를 줄 수 있다.
+<br /><br /><br /></p>
+
+<h3 id="클릭-전-결과">클릭 전 결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658219-1b3fc514-ad32-44a5-8398-12b9d10d3b50.png" alt="state_example1" />
+<br /><br /></p>
+
+<h3 id="클릭-후-결과">클릭 후 결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658235-09593b3e-a9e2-4866-93ad-5ac13ba7ea31.png" alt="state_example2" />
+<br /><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> 태그를 클릭하면 <code class="language-plaintext highlighter-rouge">setState</code> 함수가 호출되면서<br /> <code class="language-plaintext highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code> 태그 사이에 작성했던 <code class="language-plaintext highlighter-rouge">state</code> 값이 1 증가한 결과를 볼 수 있다.
+<br /><br /><br /><br /><br /><br /></p>
+
+<p><b>Props 와 State 에 대한 개념을 확실히 이해하고서<br />
+React 프로젝트에 임해야겠다,,<span style="font-size: 23px">😸</span> &lt;/br&gt;</b></p>
+:ET
