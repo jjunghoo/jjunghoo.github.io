@@ -1,0 +1,108 @@
+I"�<p>대략 3주간의 미니 프로젝트를 진행하면서 한동안 블로그 글 작성을 못한것 같다.. <span style="font-size: 16px">😭</span></p>
+<p><br /></p>
+
+<p><del>중간에 명절이 포함되어 있는건 애바참치꽁치삼치</del><br /><br /></p>
+
+<p>이번 포스팅은 미니 프로젝트 기간동안 작업을 진행했던것에 대해 작성하려고 한다.</p>
+<p><br /><br />
+<img src="https://c.tenor.com/6S7xQb-nDHYAAAAC/happy-feet-mumble.gif" width="300px" /></p>
+
+<p><del>&lt;p&gt;(귀여워서 그냥 한번 올려 봤다…)&lt;/p&gt;</del>
+<br /><br /></p>
+
+<h2 id="프로젝트-소개">프로젝트 소개</h2>
+
+<p>Hacker News에서 제공하는 API를 이용해서 UXUI 팀과 협업하는 React 프로젝트.
+<br /><br /></p>
+
+<h3 id="hacker-news란"><a href="https://news.ycombinator.com/" style="text-decoration: none; color: rgba(253, 97, 6, 1);">Hacker News</a>란?</h3>
+
+<p>Paul Graham의 투자 펀드이자 스타트 업 인큐베이터 인 Y Combinator가<br />
+운영하고 있는 <u>컴퓨터 과학과 기업가 정신에 초점을 맞춘 소셜 뉴스 웹 사이트</u>이다.</p>
+
+<p><br /></p>
+
+<h2 id="사용한-기술-스택">사용한 기술 스택</h2>
+
+<ul>
+  <li>
+    <p>프로그래밍 언어 : JavaScript</p>
+  </li>
+  <li>
+    <p>UI 라이브러리 : React</p>
+  </li>
+  <li>
+    <p>스타일링 : CSS in JS, SCSS</p>
+  </li>
+  <li>
+    <p>상태 관리 : React Hooks</p>
+  </li>
+  <li>
+    <p>빌드 도구 : Create React App</p>
+  </li>
+  <li>
+    <p>라우트 : React Router 사용</p>
+  </li>
+  <li>
+    <p>배포 : Vercel 활용</p>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h2 id="프로젝트-진행-과정">프로젝트 진행 과정</h2>
+
+<p><br /></p>
+
+<ol>
+  <li>
+    <p>UXUI 팀에서 만든 시안을 바탕으로 개발 가능 유무 검토.</p>
+  </li>
+  <li>
+    <p>검토한 시안을 토대로 만든 프로토타입을 활용해 UXUI팀과 회의.</p>
+  </li>
+  <li>
+    <p>중간 개발 과정에서 UXUI 팀으로부터 수정된 시안 전달 받음.</p>
+  </li>
+  <li>
+    <p>수정된 시안대로 프로젝트 스타일 수정.</p>
+  </li>
+  <li>
+    <p>반응형 디자인에 맞게 스타일 적용 (react-responsive 사용)</p>
+  </li>
+  <li>
+    <p>추가 사항 유무 확인</p>
+  </li>
+  <li>
+    <p>프로젝트 배포 (Vercel)</p>
+  </li>
+</ol>
+
+<p><br /><br /></p>
+
+<details>
+  <summary>프로젝트 배포 주소</summary>
+  <span>
+    <a href="https://hacker-news-react.vercel.app" style="text-decoration: none; display: inline-block; margin-top: 10px; padding: 10px; background-color: rgb(229, 229, 229); color: black; font-weight: bold; border-radius: 5px; font-size: 18px;">
+      hacker-news-react
+    </a>
+  </span>
+</details>
+
+<p><br /><br /></p>
+
+<h2 id="개선이-필요하다고-여겨지는-점">개선이 필요하다고 여겨지는 점</h2>
+
+<ul>
+  <li>
+    <p>모바일과 테블릿화면에서 데이터를 불러오는 과정에서 로딩페이지가 필요하다고 생각된다.<br /> (사용자가 좀 더 자연스럽게 볼 수 있게)</p>
+  </li>
+  <li>
+    <p>데스크탑 화면에서는 more 버튼을 클릭하면 추가적으로 10개의 글들을 불러올 수 있게 구성했지만,<br />모바일과 테블릿 화면에서는 화면에서 보여지는 마지막 글 밑으로 슬라이드할 경우에<br /> 추가적인 10개의 글들을 불러올 수 있게 해야 사용자에게 좀 더 편의성을 제공할 수 있을 것 같다.</p>
+  </li>
+</ul>
+
+<p><br /><br /><br />
+P.S.<br /><br />길면 길고 짧으면 짧은 프로젝트 기간이었지만 UIUX 팀 분들과 협업하며 진행했던 정말 소중한 경험이었다.<br />
+다음주부터는 새롭게 구성된 UXUI팀분들과 FE개발팀이 함께 기업 연계 프로젝트를 진행하게 된다.<br />그동안 우리끼리 진행하던 프로젝트가 아닌 실제 서비스되는 프로젝트를 진행하게 되서 설레이면서 걱정도 되고 감정이 복잡미묘하다.<br />그래도 최선을 다해보자! 아자아자! <span style="font-size: 23px">😺</span></p>
+:ET
