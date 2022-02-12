@@ -1,21 +1,23 @@
-I"�<p>대략 3주간의 미니 프로젝트를 진행하면서 한동안 블로그 글 작성을 못한것 같다.. <span style="font-size: 16px">😭</span></p>
+I"<p>대략 3주간의 미니 프로젝트를 진행하면서 한동안 블로그 글 작성을 못한것 같다.. <span style="font-size: 16px">😭</span></p>
 <p><br /></p>
 
 <p><del>중간에 명절이 포함되어 있는건 애바참치꽁치삼치</del><br /><br /></p>
 
 <p>이번 포스팅은 미니 프로젝트 기간동안 작업을 진행했던것에 대해 작성하려고 한다.</p>
-<p><br /><br />
-<img src="https://c.tenor.com/6S7xQb-nDHYAAAAC/happy-feet-mumble.gif" width="300px" /></p>
+<p><br /><br /></p>
+<div>
+  <img src="https://c.tenor.com/6S7xQb-nDHYAAAAC/happy-feet-mumble.gif" width="300px" />
+  <p style="text-decoration: line-through">(귀여워서 그냥 한번 올려 봤다...)</p>
+</div>
 
-<p><del>&lt;p&gt;(귀여워서 그냥 한번 올려 봤다…)&lt;/p&gt;</del>
-<br /><br /></p>
+<p><br /><br /></p>
 
 <h2 id="프로젝트-소개">프로젝트 소개</h2>
 
 <p>Hacker News에서 제공하는 API를 이용해서 UXUI 팀과 협업하는 React 프로젝트.
 <br /><br /></p>
 
-<h3 id="hacker-news란"><a href="https://news.ycombinator.com/" style="text-decoration: none; color: rgba(253, 97, 6, 1);">Hacker News</a>란?</h3>
+<h4 id="hacker-news란"><a href="https://news.ycombinator.com/" style="text-decoration: none; color: rgba(253, 97, 6, 1);">Hacker News</a>란?</h4>
 
 <p>Paul Graham의 투자 펀드이자 스타트 업 인큐베이터 인 Y Combinator가<br />
 운영하고 있는 <u>컴퓨터 과학과 기업가 정신에 초점을 맞춘 소셜 뉴스 웹 사이트</u>이다.</p>
