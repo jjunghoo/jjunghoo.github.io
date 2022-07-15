@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2022-07-15T15:39:28+00:00</updated><id>/jekyll-theme-yat/feed.xml</id><title type="html">JUNGHOO 블로그</title><subtitle>하루하루 열심히 살아가고픈 Junghoo의 블로그</subtitle><author><name>Junghoo</name></author><entry><title type="html">location.hash로 URL 주소값 활용하기</title><link href="/jekyll-theme-yat/javascript/2022/07/15/post7.html" rel="alternate" type="text/html" title="location.hash로 URL 주소값 활용하기" /><published>2022-07-15T00:00:00+00:00</published><updated>2022-07-15T00:00:00+00:00</updated><id>/jekyll-theme-yat/javascript/2022/07/15/post7</id><content type="html" xml:base="/jekyll-theme-yat/javascript/2022/07/15/post7.html"><![CDATA[<h2 id="locationhash-란">location.hash 란?</h2>
+
+<p><br />
+<img style="margin: auto 0" max-width="100px" alt="url_example" src="https://user-images.githubusercontent.com/76745621/179228484-f04521fd-1506-49d5-9d6d-40de3ddf8129.png" />
+<br />
+위와 같이 URL값이 있다고 가정할 때<br /><br /></p>
+
+<p><img style="margin: auto 0" width="384" alt="스크린샷 2022-07-15 오후 11 30 32" src="https://user-images.githubusercontent.com/76745621/179244729-cc0b2b77-176f-4123-bd44-06498ef1da57.png" /></p>
+
+<p>#을 포함한 값들이 리턴합니다.<br /><br /><br /></p>
+
+<h2 id="활용-예시">활용 예시</h2>
+
+<p><br />
+<img style="margin: auto 0" width="455" alt="스크린샷 2022-07-15 오후 11 44 04" src="https://user-images.githubusercontent.com/76745621/179247123-3a088239-bea3-4413-b9c1-b0960fbf5d65.png" />
+<br /><br /></p>
+
+<p>해쉬 값이 변경되면 <code class="language-plaintext highlighter-rouge">router</code> 함수가 실행이 되는데<br />
+page1, page2 처럼 페이징 구현에도 활용할 수 있습니다.
+<br /><br /><br /></p>
+
+<h3 id="hashchange">hashchange</h3>
+
+<p>브라우저에서 hash값이 바뀔때 발생하는 이벤트입니다.<br />
+브라우저 url 부분이 바뀌는 것이므로 이벤트 리스너는 window에 등록할 수 있습니다.</p>]]></content><author><name>Junghoo</name></author><category term="JavaScript" /><category term="location.hash" /><summary type="html"><![CDATA[기존에 react로 만들었던 해...]]></summary></entry><entry><title type="html">파이널프로젝트 기획 첫날</title><link href="/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/02/14/post7.html" rel="alternate" type="text/html" title="파이널프로젝트 기획 첫날" /><published>2022-02-14T00:00:00+00:00</published><updated>2022-02-14T00:00:00+00:00</updated><id>/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/02/14/post7</id><content type="html" xml:base="/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/02/14/post7.html"><![CDATA[<p>드디어 대망의 파이널 프로젝트가 시작이 되었다!</p>
+<p><br /></p>
+<p>UXUI팀과 FE팀이 함께 UIUX 디자인의 요소와 프로세스 등 개발 과정에서 알 수 없었던 정보들을 알 수 있었던 뜻깊은 시간이었다.</p>
+<p><br /></p>
+<p>본격적으로 코드작업이 진행되기 전에 한 주 동안 기획 단계를 진행하게 되었는데 기획 부분에서 많은 어려움을 겪었다.. <span style="font-size: 16px">😔</span></p>
+<p><br /></p>
+<p>우선 기업으로부터 전달 받은 요구사항이 너무 구체적이지 않아서 UXUI 팀분들과 FE 개발팀분들이 서로 많은 혼란이 있었다..</p>
+<p><br /></p>
+<p>기업 담당자분과 계속 이야기가 추가적으로 오가겠지만 잘 마무리 되었으면 하는 바램이다..</p>
+<p><br /></p>]]></content><author><name>Junghoo</name></author><category term="일상생활" /><category term="파이널프로젝트 기획 단계" /><summary type="html"><![CDATA[파이널프로젝트 기획 첫날...]]></summary></entry><entry><title type="html">미니 프로젝트</title><link href="/jekyll-theme-yat/react/2022/02/12/post6.html" rel="alternate" type="text/html" title="미니 프로젝트" /><published>2022-02-12T00:00:00+00:00</published><updated>2022-02-12T00:00:00+00:00</updated><id>/jekyll-theme-yat/react/2022/02/12/post6</id><content type="html" xml:base="/jekyll-theme-yat/react/2022/02/12/post6.html"><![CDATA[<p>대략 3주간의 미니 프로젝트를 진행하면서 한동안 블로그 글 작성을 못한것 같다.. <span style="font-size: 16px">😭</span></p>
+
+<p><del>중간에 명절이 포함되어 있는건 애바참치꽁치삼치</del><br /><br /></p>
+
+<p>이번 포스팅은 미니 프로젝트 기간동안 작업을 진행했던것에 대해 작성하려고 한다.</p>
+<p><br /><br /></p>
+<div>
+  <img src="https://c.tenor.com/6S7xQb-nDHYAAAAC/happy-feet-mumble.gif" width="300px" />
+  <p style="text-decoration: line-through">(귀여워서 그냥 한번 올려 봤다...)</p>
+</div>
+
+<p><br /><br /></p>
+
+<h2 id="프로젝트-소개">프로젝트 소개</h2>
+
+<p>Hacker News에서 제공하는 API를 이용해서 UXUI 팀과 협업하는 React 프로젝트.
+<br /><br /></p>
+
+<h4 id="hacker-news란"><a href="https://news.ycombinator.com/" style="text-decoration: none; color: rgba(253, 97, 6, 1);">Hacker News</a>란?</h4>
+
+<p>Paul Graham의 투자 펀드이자 스타트 업 인큐베이터 인 Y Combinator가<br />
+운영하고 있는 <u>컴퓨터 과학과 기업가 정신에 초점을 맞춘 소셜 뉴스 웹 사이트</u>이다.</p>
+
+<p><br /></p>
+
+<h2 id="사용한-기술-스택">사용한 기술 스택</h2>
+
+<ul>
+  <li>
+    <p>프로그래밍 언어 : JavaScript</p>
+  </li>
+  <li>
+    <p>UI 라이브러리 : React</p>
+  </li>
+  <li>
+    <p>스타일링 : CSS in JS, SCSS</p>
+  </li>
+  <li>
+    <p>상태 관리 : React Hooks</p>
+  </li>
+  <li>
+    <p>빌드 도구 : Create React App</p>
+  </li>
+  <li>
+    <p>라우트 : React Router 사용</p>
+  </li>
+  <li>
+    <p>배포 : Vercel 활용</p>
+  </li>
+</ul>
+
+<p><br /><br /><br /></p>
+
+<h2 id="프로젝트-진행-과정">프로젝트 진행 과정</h2>
+
+<ol>
+  <li>
+    <p>UXUI 팀에서 만든 시안을 바탕으로 개발 가능 유무 검토.</p>
+  </li>
+  <li>
+    <p>검토한 시안을 토대로 만든 프로토타입을 활용해 UXUI팀과 회의.</p>
+  </li>
+  <li>
+    <p>중간 개발 과정에서 UXUI 팀으로부터 수정된 시안 전달 받음.</p>
+  </li>
+  <li>
+    <p>수정된 시안대로 프로젝트 스타일 수정.</p>
+  </li>
+  <li>
+    <p>반응형 디자인에 맞게 스타일 적용 (react-responsive 사용)</p>
+  </li>
+  <li>
+    <p>추가 사항 유무 확인</p>
+  </li>
+  <li>
+    <p>프로젝트 배포 (Vercel)</p>
+  </li>
+</ol>
+
+<p><br /><br /></p>
+
+<details>
+  <summary>프로젝트 배포 주소</summary>
+  <span>
+    <a href="https://hacker-news-react.vercel.app" style="text-decoration: none; display: inline-block; margin-top: 10px; padding: 10px; background-color: rgb(229, 229, 229); color: black; font-weight: bold; border-radius: 5px; font-size: 18px;">
+      hacker-news-react
+    </a>
+  </span>
+</details>
+
+<p><br /><br /></p>
+
+<h2 id="개선이-필요하다고-여겨지는-점">개선이 필요하다고 여겨지는 점</h2>
+
+<ul>
+  <li>
+    <p>모바일과 테블릿화면에서 데이터를 불러오는 과정에서 로딩페이지가 필요하다고 생각된다.<br /> (사용자가 좀 더 자연스럽게 볼 수 있게)</p>
+  </li>
+  <li>
+    <p>데스크탑 화면에서는 more 버튼을 클릭하면 추가적으로 10개의 글들을 불러올 수 있게 구성했지만,<br />모바일과 테블릿 화면에서는 화면에서 보여지는 마지막 글 밑으로 슬라이드할 경우에<br /> 추가적인 10개의 글들을 불러올 수 있게 해야 사용자에게 좀 더 편의성을 제공할 수 있을 것 같다.</p>
+  </li>
+</ul>
+
+<p><br /><br /><br /><br /></p>
+
+<p>P.S.</p>
+<p>길면 길고 짧으면 짧은 프로젝트 기간이었지만 UIUX 팀 분들과 협업하며 진행했던 정말 소중한 경험이었다.<br />
+다음주부터는 새롭게 구성된 UXUI팀분들과 FE개발팀이 함께 기업 연계 프로젝트를 진행하게 된다.<br />
+그동안 우리끼리 진행하던 프로젝트가 아닌 실제 서비스되는 프로젝트를 진행하게 되서 설레이면서 걱정도 되고 감정이 복잡미묘하다.<br />
+그래도 최선을 다해보자! 아자아자! <span style="font-size: 23px">😺</span></p>]]></content><author><name>Junghoo</name></author><category term="React" /><category term="React" /><category term="Hacker News API" /><category term="미니 프로젝트 후기" /><summary type="html"><![CDATA[React with Hacker News API]]></summary></entry><entry><title type="html">Hooks Additional API</title><link href="/jekyll-theme-yat/react/2022/01/23/post5.html" rel="alternate" type="text/html" title="Hooks Additional API" /><published>2022-01-23T00:00:00+00:00</published><updated>2022-01-23T00:00:00+00:00</updated><id>/jekyll-theme-yat/react/2022/01/23/post5</id><content type="html" xml:base="/jekyll-theme-yat/react/2022/01/23/post5.html"><![CDATA[<h2 id="hooks-additional-api">Hooks Additional API</h2>
+
+<p><br />
+React는 기본적인 Hook 이외에도 <code class="language-plaintext highlighter-rouge">useReducer</code>, <code class="language-plaintext highlighter-rouge">useCallback</code>, <code class="language-plaintext highlighter-rouge">useMemo</code>, <code class="language-plaintext highlighter-rouge">useRef</code> 등 여러가지 Hook 들이 있다.
+<br /><br /><br /></p>
+
+<h3 id="usereducer">useReducer</h3>
+
+<ul>
+  <li>useState의 대체 함수입니다.</li>
+  <li>(state, action) =&gt; newState의 형태로 reducer를 받고 dispatch 메서드와 짝의 형태로 현재 state를 반환합니다.</li>
+  <li>다수의 하윗값을 포함하는 복잡한 정적 로직을 만드는 경우나 다음 state가 이전 state에 의존적인 경우에 많이 사용 되어진다.
+<br /><br /></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">state</span><span class="p">,</span> <span class="nx">dispatch</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useReducer</span><span class="p">(</span><span class="nx">reducer</span><span class="p">,</span> <span class="nx">initialArg</span><span class="p">,</span> <span class="nx">init</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><br /><br /></p>
+
+<h3 id="usecallback">useCallback</h3>
+
+<ul>
+  <li>첫 번째 인자로는 콜백 함수, 두 번째 인자는 의존성 배열을 전달</li>
+  <li>의존성 배열의 값이 하나라도 바뀔 경우 새로운 함수를 반환</li>
+  <li>컴포넌트의 불필요한 렌더링을 방지하기 위해 사용<br /><br /></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">memoizedCallback</span> <span class="o">=</span> <span class="nx">useCallback</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">doSomething</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
+<span class="p">},</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">]);</span>
+</code></pre></div></div>
+
+<p><br /><br /></p>
+
+<h3 id="usememo">useMemo</h3>
+
+<ul>
+  <li>메모이제이션된 값을 반환한다.</li>
+  <li>동일한 계산을 반복할 때 이전에 계산한 값을 기억해서 반복 계산을 제거</li>
+  <li>첫 번째 인자로 실행될 함수를 전달한다.</li>
+  <li>두 번째 인자로 의존성 배열을 전달한다.</li>
+  <li>배열 요소 중 값이 하나라도 바뀌면 첫 번째 인자로 전달된 함수가 재계산된다.<br /><br /></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">memoizedValue</span> <span class="o">=</span> <span class="nx">useMemo</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">computeExpensiveValue</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">),</span> <span class="p">[</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">]);</span>
+</code></pre></div></div>
+
+<p><br /><br /></p>
+
+<h3 id="useref">useRef</h3>
+
+<ul>
+  <li>javascript의 document.getElementById()처럼 사용 할 수 있습니다.</li>
+  <li>DOM을 선택하는 용도 외에도 컴포넌트 안에서 조회 및 수정 할 수 있는 변수를 관리하는 용도로도 사용됩니다.</li>
+  <li>useRef 로 관리하는 변수는 값이 바뀐다고 해서 컴포넌트가 리렌더링 되지 않습니다.
+<br /><br /></li>
+</ul>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useRef</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">example</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">nameInput</span> <span class="o">=</span> <span class="nx">useRef</span><span class="p">();</span>
+
+  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="p">=</span><span class="s">"name"</span> <span class="na">value</span><span class="p">=</span><span class="si">{</span><span class="nx">text</span><span class="si">}</span> <span class="na">ref</span><span class="p">=</span><span class="si">{</span><span class="nx">nameInput</span><span class="si">}</span> <span class="p">/&gt;;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /></p>]]></content><author><name>Junghoo</name></author><category term="React" /><category term="React" /><category term="Hooks Additional API" /><summary type="html"><![CDATA[Hooks Additional API]]></summary></entry><entry><title type="html">React Hook lifeCycle 과 Effect Hook</title><link href="/jekyll-theme-yat/react/2022/01/16/post4.html" rel="alternate" type="text/html" title="React Hook lifeCycle 과 Effect Hook" /><published>2022-01-16T00:00:00+00:00</published><updated>2022-01-16T00:00:00+00:00</updated><id>/jekyll-theme-yat/react/2022/01/16/post4</id><content type="html" xml:base="/jekyll-theme-yat/react/2022/01/16/post4.html"><![CDATA[<h2 id="react-hook-lifecycle">React Hook lifeCycle</h2>
+
+<p style="font-size: 16px">React Hook은 함수형 component에서 클래스형 component의 기능을 사용할 수 있게끔 React 16.8에 새로 추가된 기능입니다.</p>
+<p><br /><br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/149652321-8ff24d7b-548d-4ed5-8e29-408e2d5db813.png" alt="20220116_171019_1" /></p>
+
+<p><br /><br /></p>
+
+<h2 id="effect-hook">Effect Hook</h2>
+
+<p>React 컴포넌트 안에서 데이터를 가져오거나 DOM을 직접 조작하는 작업을 ‘side effects’ 또는 ‘effects’ 라고 합니다.
+<br /><br /><br /></p>
+
+<h3 id="useeffect">useEffect</h3>
+
+<p>클래스형 component의 <code class="language-plaintext highlighter-rouge">componentDidMount</code>, <code class="language-plaintext highlighter-rouge">componentDidUpdate</code>, <code class="language-plaintext highlighter-rouge">componentWillUnmount</code> 의 기능을 하나로 API로 통합한 Hook 입니다.</p>
+
+<p><br /></p>
+
+<h3 id="clean-up-함수란"><code class="language-plaintext highlighter-rouge">clean up 함수란?</code><br /></h3>
+
+<p>useEffect()에서 parameter로 넣은 함수의 return 함수입니다.<br />
+Component의 unmount이전, update직전에 어떠한 작업을 수행하고 싶다면 Clean-up함수를 반환해 주어야 합니다.
+<br /><br /></p>
+
+<p><b>unmount 될 때</b></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useEffect(func, [])
+</code></pre></div></div>
+
+<ul>
+  <li>compontnt 가 mount 됐을 때 한번만 실행하고 싶으면 빈 배열을 추가합니다.</li>
+</ul>
+
+<p><br /><br /></p>
+
+<p><b>특정값 update 직전</b></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>useEffect(func, [특정값])
+</code></pre></div></div>
+
+<ul>
+  <li>특정값이 업데이트 될 때 실행하고 싶을 때는 배열안에 검사하고 싶은 값을 넣어줍니다.</li>
+</ul>
+
+<p><br /><br /></p>
+
+<p><b>작동 순서</b></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>re-render -&gt; 이전 effect clean-up -&gt; effect
+</code></pre></div></div>
+
+<p><br /><br /></p>
+
+<h3 id="hook-사용-규칙">Hook 사용 규칙</h3>
+
+<ul>
+  <li>
+    <p>최상위(at the top level)에서만 Hook을 호출해야 한다.<br />(반복문, 조건문, 중첩된 함수 내에서 Hook을 실행 X)</p>
+  </li>
+  <li>
+    <p>React 함수 컴포넌트 내에서만 Hook을 호출해야 한다.</p>
+  </li>
+</ul>]]></content><author><name>Junghoo</name></author><category term="React" /><category term="React" /><category term="React Hook lifeCycle" /><category term="Effect Hook" /><summary type="html"><![CDATA[React Hook lifeCycle 과 Effect Hook]]></summary></entry><entry><title type="html">Props와 State</title><link href="/jekyll-theme-yat/react/2022/01/09/post3.html" rel="alternate" type="text/html" title="Props와 State" /><published>2022-01-09T00:00:00+00:00</published><updated>2022-01-09T00:00:00+00:00</updated><id>/jekyll-theme-yat/react/2022/01/09/post3</id><content type="html" xml:base="/jekyll-theme-yat/react/2022/01/09/post3.html"><![CDATA[<h1 id="react에서는-component끼리-데이터를-서로-주고-받을-때-props-와-state-를-활용할-수-있다">React에서는 <code class="language-plaintext highlighter-rouge">component</code>끼리 데이터를 서로 주고 받을 때 <code class="language-plaintext highlighter-rouge">props</code> 와 <code class="language-plaintext highlighter-rouge">state</code> 를 활용할 수 있다.<br /><br /></h1>
+
+<h2 id="props">Props</h2>
+
+<ul>
+  <li>부모 컴포넌트가 자식 컴포넌트에 값을 전달할 때 사용하는 것이다 <strong>(읽기 전용)</strong><br /><br /><br /></li>
+</ul>
+
+<h3 id="appjs">App.js</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">"</span><span class="s2">./styles.css</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Example1</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Example1</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Props</span> <span class="nx">예제</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Example1</span> <span class="nx">str</span><span class="o">=</span><span class="dl">"</span><span class="s2">테스트</span><span class="dl">"</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Example1 컴포넌트에 ‘테스트’ 라는 문자데이터를 str 이라는 이름으로 <code class="language-plaintext highlighter-rouge">props</code> 를 전달한다.
+<br /><br /><br /></p>
+
+<h3 id="example1jsx">Example1.jsx</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">const</span> <span class="nx">sExample1</span> <span class="o">=</span> <span class="p">(</span><span class="nx">props</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="dl">"</span><span class="s2">{props.str}</span><span class="dl">"</span><span class="o">&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span><span class="p">};</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code> 태그 사이에 전달 받은 <code class="language-plaintext highlighter-rouge">props</code> 데이터를 입력을 해주면 props 데이터를 받아올 수 있다.
+<br /><br /><br /></p>
+
+<h3 id="결과">결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658183-462517c4-050a-4c8e-a5fa-247d2d00606a.png" alt="props_example" />
+<br /><br /><br /><br /><br /></p>
+
+<h2 id="state">State</h2>
+
+<ul>
+  <li>state는 컴포넌트 자기 자신이 가지고 있는 값이다.<br /></li>
+  <li>함수 컴포넌트에서는 <code class="language-plaintext highlighter-rouge">useState()</code> Hook을 이용해서 state를 생성할 수 있다.
+<br /><br /><br /></li>
+</ul>
+
+<h3 id="appjs-1">App.js</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="dl">"</span><span class="s2">./styles.css</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Example2</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./Example2</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">className</span><span class="o">=</span><span class="dl">"</span><span class="s2">App</span><span class="dl">"</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Sate</span> <span class="nx">예제</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">Example2</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><br /><br /><br /></p>
+
+<h3 id="example2jsx">Example2.jsx</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">Example2</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">state</span><span class="p">,</span> <span class="nx">setState</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{()</span> <span class="o">=&gt;</span> <span class="nx">setState</span><span class="p">(</span><span class="nx">state</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)}</span><span class="o">&gt;</span><span class="nx">Click</span><span class="o">!&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>      <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">state</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/h1</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>위 예제에서는<br />
+<code class="language-plaintext highlighter-rouge">useState()</code> 를 이용해서 state 와 state 값을 변경시킬 수 있는 setState 함수를 만들었다. <br />
+<code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> 태그를 클릭하면 <code class="language-plaintext highlighter-rouge">setState</code> 함수가 호출이 되면서 <code class="language-plaintext highlighter-rouge">state</code> 값에 변화를 줄 수 있다.
+<br /><br /><br /></p>
+
+<h3 id="클릭-전-결과">클릭 전 결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658219-1b3fc514-ad32-44a5-8398-12b9d10d3b50.png" alt="state_example1" />
+<br /><br /></p>
+
+<h3 id="클릭-후-결과">클릭 후 결과</h3>
+
+<p><img src="https://user-images.githubusercontent.com/76745621/148658235-09593b3e-a9e2-4866-93ad-5ac13ba7ea31.png" alt="state_example2" />
+<br /><br /></p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> 태그를 클릭하면 <code class="language-plaintext highlighter-rouge">setState</code> 함수가 호출되면서<br /> <code class="language-plaintext highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code> 태그 사이에 작성했던 <code class="language-plaintext highlighter-rouge">state</code> 값이 1 증가한 결과를 볼 수 있다.
+<br /><br /><br /><br /><br /><br /></p>
+
+<p><b>Props 와 State 에 대한 개념을 확실히 이해하고서<br />
+React 프로젝트에 임해야겠다,,<span style="font-size: 23px">😸</span> &lt;/br&gt;</b></p>]]></content><author><name>Junghoo</name></author><category term="React" /><category term="React" /><category term="Props &amp; State" /><summary type="html"><![CDATA[React는 component끼리 데이터를 서로 주고 받을 때 props, state를 이용할 수 있다.]]></summary></entry><entry><title type="html">힘내자 아자아자</title><link href="/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/01/05/post2.html" rel="alternate" type="text/html" title="힘내자 아자아자" /><published>2022-01-05T00:00:00+00:00</published><updated>2022-01-05T00:00:00+00:00</updated><id>/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/01/05/post2</id><content type="html" xml:base="/jekyll-theme-yat/%EC%9D%BC%EC%83%81%EC%83%9D%ED%99%9C/2022/01/05/post2.html"><![CDATA[<p>패스트캠퍼스 프론트엔드 과정을 시작한 지 어느덧 한 달이 지났다.<br /><br />
+처음 조편성이 이루어 지고서 <code class="language-plaintext highlighter-rouge">HTML</code>, <code class="language-plaintext highlighter-rouge">CSS</code>, <code class="language-plaintext highlighter-rouge">Javascript</code>를 같이 배우고<br />
+여러 과제와 작은 프로젝트를 진행하면서 서로 의기투합해나가며
+팀 분위기도 좋아지려고 할 때 즈음…<br />
+조 편성이 새로 이루어질 거라는 충격적인 소식을 접하게 되었다.<br />
+자세한 이야기는 모르겠지만 개인적인 생각으로는 교육 과정을 나름 벅차하는 수강생분들이<br /> 중도 하차하시게 되면서
+조 인원을 형평성에 맞게 다시 재조정하는 것으로 보인다.<br />
+짧으면 짧고 길면 긴 한 달이었지만 내게는 많은 아쉬움이 남는다..<br />
+금일 새롭게 조정된 조원분들과 약간의(?) 어색함을 서로 공유하며 가벼운 인사를 끝으로<br />
+내일부터는 새로운 조에서 해당 과정을 이어나간다.<br />
+아쉬워도 어쩔 수 없지 않은가..! <br />새로운 마음가짐으로 그동안 해왔던 것처럼 열심히 해보자!<br />
+아자아자!</p>]]></content><author><name>Junghoo</name></author><category term="일상생활" /><category term="일상생활" /><summary type="html"><![CDATA[패스트캠퍼스 프론트엔드 과정을 시작한지 어느덧 한달이 지났다.]]></summary></entry><entry><title type="html">github.io 블로그 시작하기</title><link href="/jekyll-theme-yat/blog/2022/01/04/first-post.html" rel="alternate" type="text/html" title="github.io 블로그 시작하기" /><published>2022-01-04T00:00:00+00:00</published><updated>2022-01-04T00:00:00+00:00</updated><id>/jekyll-theme-yat/blog/2022/01/04/first-post</id><content type="html" xml:base="/jekyll-theme-yat/blog/2022/01/04/first-post.html"><![CDATA[<p>GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.</p>
+
+<p>아직은 초라하지만 열심히 해보자</p>]]></content><author><name>Junghoo</name></author><category term="Blog" /><category term="Blog" /><summary type="html"><![CDATA[GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.]]></summary></entry></feed>
