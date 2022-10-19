@@ -27,7 +27,7 @@
 title: JUNGHOO 블로그
 email: wjdgn1115@gmail.com
 author: Junghoo
-
+future: true;
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
 # * current year: {currentYear}
