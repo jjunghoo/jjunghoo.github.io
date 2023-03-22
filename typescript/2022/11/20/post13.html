@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>타입스크립트에서는 DOM을 직접적으로 다룰 때 타입을 지정해주지 않으면 오류가 빈번하게 발생합니다. 이때 타입 단언을 통해서 as로 정확하게 타입을 단언해 준다면 비로소 DOM API를 조작할수 있게 됩니다.</p>
+<p><br><br></p>
+
+<h2 id="타입단언이란">타입단언이란?</h2>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>- 개발자가 해당 타입에 대해 확신이 있을 때 사용하는 타입 지정 방식입니다.</p>
+  <p>- value as Type 문법을 사용해 원하는 임의의 타입을 값에 할당할 수 있습니다. </p>
+</blockquote>
+<p>타입스크립트는 일반적으로 타입 추론을 통해 작성한 코드의 타입을 추론하게 되는데 이때 좀 더 엄격하게 타입 검사를 하는 경우에는 타입을 명확하게 지정해주어야 합니다.</p>
+<p><br><br></p>
+
+<p></p>
+
+<h3 id="오류-예시">오류 예시</h3>
+
+<p><img style="margin: 0 auto;" width="455" alt="스크린샷 2022-11-21 오전 7 58 14" src="https://user-images.githubusercontent.com/76745621/202931192-13042d13-a3d9-4f5c-910e-90eccc62d713.png">
+<br><br></p>
+<p>분명 자바스크립트에서는 문제 없이 작동하는 코드인데 오류코드(TS2531)를 내보냈고 이에 대해서 구글링을 한 결과 타입단언을 사용해서 문제를 해결할 수 있었습니다.</p>
+<p><br><br></p>
+
+<h3 id="해결">해결</h3>
+
+<p><img style="margin: 0 auto;" width="600" alt="스크린샷 2022-11-21 오전 6 19 41" src="https://user-images.githubusercontent.com/76745621/202926839-c41276ac-106b-412d-9fb6-0af8ed3a9de6.png">
+<br></p>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>HTMLDivElement로 타입 단언을 해준 뒤에는 resultEl 의 타입은 HTMLDivElement로 특정되고 innerText 또한 사용할 수 있게 됩니다.</p>
+</blockquote>
+<p><br></p>
+
+<p><br></p>
+<p>참고</p>
+<p><a style="color: dodgerblue" href="https://www.typescriptlang.org/docs/handbook/basic-types.html">TypeScript - Type Assertions</a>
+<br><br><br></p>
+
+<h3 id="후기">후기</h3>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>너무 무분별하게 타입추론을 사용하지는 않아야겠습니다.</p>
+</blockquote>
+</body></html>

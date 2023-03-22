@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2 id="최빈수-구하기-javascript">최빈수 구하기 (JavaScript)</h2>
+
+<p><br></p>
+<p>입력받은 정수에서 가장 많이 등장하는 수를 출력.</p>
+<p><br></p>
+
+<p><img style="margin: auto 0" width="641" alt="스크린샷 2022-10-20 오전 2 24 42" src="https://user-images.githubusercontent.com/76745621/196762098-28db704e-0246-49cc-a90a-c9aeb0661e9c.png"></p>
+
+<p><br><br></p>
+
+<p>문제를 처음 접할 때는 매우 간단하게 풀 수 있을거라는 근거없는 자신감이 충만했지만...<br>
+생각보다 문제를 푸는데 시간이 많이 걸렸습니다.<span style="font-size: 16px">😭</span><br>
+이문제의 가장 핵심은 `Object를 통해 key와 value값을 잘 활용할 수 있는가` 였습니다.
+</p>
+<p><br><br></p>
+
+<h3 id="풀이과정">풀이과정</h3>
+
+<p><br></p>
+<ol>
+  <li>가장 먼저 정수로 입력받은 값을 어떻게 나눌까를 생각하다 타입을 문자형으로 변환 후<br> **`split()`** 내장 함수를 활용하여 각 숫자들을 배열형태로 분리시켰습니다.</li>
+  <br>
+         <img style="margin: auto 0" width="468" alt="스크린샷 2022-10-20 오전 2 26 21" src="https://user-images.githubusercontent.com/76745621/196762415-3086ebc3-cd73-486a-8857-3cef84edc65e.png">
+<br><br><br>
+  <li>배열(newArr)을 순회하면서 나눈 숫자들과 갯수를 빈 Object(newObj)에 key, value형태로 저장합니다.<br>
+         <img style="margin: auto 0" width="361" alt="스크린샷 2022-10-20 오전 2 27 59" src="https://user-images.githubusercontent.com/76745621/196762748-40563b27-9c0d-4ed9-860c-13c5ff5f5190.png">
+<br><br><br>
+</li>
+  <li>Object(newObj)를 순회하면서 각 key에 해당하는 vlaue값을 maxCount와 비교 후,<br>
+   maxCount의 값보다 높으면 maxCount의 값을 key에 해당하는 value값으로 변경시켜줍니다.<br>
+   이때, maxCount에 저장되는 <u>value는 가장 많이 등장하는 수의 갯수</u>를,<br>
+   answer에 저장되는 <u>key는 가장 많이 등장하는 수</u>를 의미합니다.<br>
+
+<br>
+         
+<img style="margin: auto 0" width="601" alt="스크린샷 2022-10-20 오전 3 09 39" src="https://user-images.githubusercontent.com/76745621/196770933-19843b48-dee9-48ac-8ad0-c13db6574c26.png">
+<br><br><br>
+</li>
+</ol>
+</body></html>

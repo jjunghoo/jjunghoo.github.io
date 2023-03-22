@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<pre>웹브라우저를 공부하면서 흔히 DOM이란 단어를 많이 접하게 됩니다.
+그렇다면 이 DOM이란건 도대체 무엇일까요?  
+</pre>
+<p><br></p>
+
+<h2 id="dom이란">DOM이란?</h2>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>DOM이란 'Document Object Model' 의 약자입니다. 이를 직역하면 '문서 객체 모델'인데요.</p>
+  <p> 브라우저는 우리가 HTML(HyperText Markup Language)로 작성한 문서의 내용들을 읽고 이를 해석하는 과정에서 HTML 요소들을 Tree형태로 구조화하게 됩니다.</p>
+  <p>그리고 이렇게 구조화된 정보를 통해 브라우저 화면에 우리가 작성했던 HTML 정보들이 보여지게 되는데 이렇게 Tree로 구조화된 정보들을 바로 DOM이라고 부릅니다.</p>
+</blockquote>
+<p><br><br></p>
+
+<h2 id="dom의-구조-모습">DOM의 구조 모습</h2>
+
+<p><img style="margin: 2rem auto 0" width="434" alt="스크린샷 2022-11-06 오후 6 26 27" src="https://user-images.githubusercontent.com/76745621/200169360-9a6b3690-620d-4601-b5f8-c837c192e5c0.png">
+<br>
+<a style="color: dodgerblue" href="https://ko.wikipedia.org/wiki/%EB%AC%B8%EC%84%9C_%EA%B0%9D%EC%B2%B4_%EB%AA%A8%EB%8D%B8">(참조: 문서 객체 모델 - 위키백과)</a>
+<br><br></p>
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>브라우저에서는 HTML문서를 파싱(Parsing)하여 Tree구조 형태의 DOM을 만들게 되는데요.</p>
+  <p>이때 모든 요소, 속성, 텍스트 등의 정보들을 참조하고 요소의 중첩관계는 객체의 트리로 구조화하여 부자관계를 표현합니다.</p>
+  <p>각 부자 관계를 가지는 요소들을 이어주는 것을 node라고 하는데 더이상의 상위 요소가 없는 요소를 최상위 노드, 즉 root node 라고 합니다.</p>
+</blockquote>
+<p><br><br></p>
+
+<h2 id="개발자도구로-dom-tree-확인">개발자도구로 DOM Tree 확인</h2>
+
+<p><br></p>
+<p>브라우저에서 제공하는 개발자도구(Developer Tools)를 통해서 DOM Tree를 쉽게 확인 할 수 있습니다.</p>
+<p>MAC 운영체제를 사용하는 경우에는 option + command + i</p>
+<p>Windows 운영체제를 사용하는 경우에는 F12</p>
+<p><br>
+<img style="margin: 0 auto" width="546" alt="스크린샷 2022-11-06 오후 9 48 18" src="https://user-images.githubusercontent.com/76745621/200172745-a95157ef-b955-47a9-b435-f41ab43a60ec.png">
+<br><br></p>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  
+  <p>DOM 트리를 기반으로 브라우저에서 랜더링 된 요소(Elements)를 확인할 수 있고 요소의 속성을 직접 제어할 수도 있습니다.</p>
+</blockquote>
+
+<p><br><br></p>
+
+<p>하지만 개발자도구를 통해서 DOM을 직접적으로 제어해도 브라우저가 새로고침되면 변경된 사항들은 다시 원래대로 되돌아가게 됩니다.</p>
+<p>브라우저는 우리가 작성했던 HTML 파일을 기반으로 랜더링 되어져 있기 때문인데요.</p>
+<p>그렇다면 어떻게 해야 DOM을 조작하고 그 조작한 내용들이 계속 유지가 될 수 있게 할 수 있을까요?</p>
+<p>바로 JavaScript에서 제공하는 DOM API를 활용하는 방법이 있습니다.</p>
+<p><br><br></p>
+
+<h3 id="dom-api란">DOM API란?</h3>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 508px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>간단하게 자바스크립트에서 HTML을 제어하는 여러가지 명령들이라고 생각하면 됩니다.</p>
+</blockquote>
+
+<p><br><br></p>
+
+<h3 id="대표적인-dom-api-method">대표적인 DOM API Method</h3>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+      <p>getElementById( ) - 매개변수로 받은 값을 id로 가진 element를 반환.</p>
+      <p>getElementByClassName( ) - 매개변수로 받은 값을 class 이름으로 가진 element를 반환.</p>
+      <p>querySelector( ) - 매개변수로 특정한 CSS 지시자를 받는데 document 내에서 이 CSS 지시자와 일치한
+첫번째 element를 반환.</p>
+  <p>querySelectorAll( ) - 일치하는 모든 element들을 반환.</p>
+  <p>createElement( ) - 새로운 element node를 생성.</p>
+</blockquote>
+
+<p><br></p>
+
+<p>위에 소개 된 DOM API Method 외 DOM API의 종류는 너무나도 많은데 더 추가적인건 링크를 남겨 놓겠습니다.</p>
+
+<p><a style="color: dodgerblue" href="https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction#dom_%EC%97%90_%EC%96%B4%EB%96%BB%EA%B2%8C_%EC%A0%91%EA%B7%BC%ED%95%A0_%EC%88%98_%EC%9E%88%EB%8A%94%EA%B0%80">MDN - DOM 소개</a></p>
+
+<p><br><br></p>
+
+<h2 id="후기">후기</h2>
+
+<blockquote style="margin: 2rem 0px;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>DOM에 대한 이번 학습을 통해서 왜 자바스크립트를 배우면서 DOM에 대해서 알고 있어야 하는지에 대해 한 번더 생각할 수 있었고 브라우저가 화면에 출력되는 과정들에 대해서 이해하는데 많은 도움이 되었습니다.</p>
+</blockquote>
+</body></html>

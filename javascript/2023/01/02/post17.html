@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<blockquote style="margin: 2rem 0px 5rem;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+  <p>모던 자바스크립트를 참조하여 작성하였습니다.</p>
+</blockquote>
+
+<h2 id="자바스크립트란">자바스크립트란</h2>
+
+<p>1995년, 넷스케이프 커뮤니케이션즈는 웹페이지의 보조적인 기능을 수행하기 위해 브라우저에서 동작하는 경량 프로그래밍 언어를 도입하게 되고 이렇게 탄생한 것이 바로 브렌던 아이크가 개발한 자바스크립트입니다.</p>
+<p style="margin-bottom: 3rem">1996년 3월, 넷스케이프 커뮤니케이션즈의 웹 브라우저인 넷스케이프 내비게이터2 에 탑재되었고 'Mocha'(모카)로 명명되었고 그해 9월 LiveScript(라이브스크립트)로 이름이 변경되었다가 12월에 'JavaScript'라는 이름으로 최종 명명되었습니다.</p>
+
+<h3 id="표준화">표준화</h3>
+
+<p>마이크로소프트에서 개발된 JavaScript의 파생 버전인 JScript가 등장하게되고 JScript와 JavaScript는 시장 점유율을 높이기 위해서 자사 브라우저에서만 동작하는 기능을 경쟁적으로 추가하기 시작했습니다. 이로 인해 <b>크로스 브라우징 이슈</b>가 발생하게 되면서 표준화된 JavaScript의 필요성이 대두되었고 1996년 11월 넷스케이프 커뮤니케이션즈는 <b>ECMA 인터내셔널</b>에 JavaScript의 표준화를 요청합니다.</p>
+<p><br><br></p>
+
+<h4 id="-크로스-브라우징-이슈란">👀 크로스 브라우징 이슈란?</h4>
+
+<p>HTML, CSS, JS 파일을 기준으로 모든 브라우저에서 동일하게 랜더링 되지 않는 현상.</p>
+<p><br></p>
+
+<h4 id="-ecma-인터내셔널">👀 ECMA 인터내셔널</h4>
+
+<p>컴퓨터 시스템의 표준을 관리하는 비영리 표준화 기구.</p>
+<p><br><br></p>
+
+<h4 id="ecmascript-버전별-특징">ECMAScript 버전별 특징</h4>
+
+<table style="border: 1px solid; margin: 1rem 0 5rem">
+  <thead>
+      <tr>
+          <th>버전</th>
+          <th>출시 연도</th>
+          <th>특징</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>ES1</td>
+          <td>1997</td>
+          <td>초판</td>
+      </tr>
+      <tr>
+          <td>ES2</td>
+          <td>1998</td>
+          <td>ISO/IEC 16262 국제 표준과 동일한 규격을 적용</td>
+      </tr>
+      <tr>
+          <td>ES3</td>
+          <td>1999</td>
+          <td>정규 표현식, try…catch</td>
+      </tr>
+      <tr>
+          <td rowspan="3">ES5</td>
+          <td rowspan="3">2009</td>
+          <td>HTML5와 함께 출현한 표준안.</td>
+      </tr>
+      <tr>
+          <td>JSON, strict mode, 접근자 프로퍼티, 프로퍼티 어트리뷰트 제어, 향상된 배열</td>
+      </tr>
+      <tr>
+        <td>조작 기능(forEach, map, filter, reduce, some, every</td>
+      </tr>
+      <tr>
+          <td rowspan="3">ES6(ECMAScript 2015)</td>
+          <td rowspan="3">2015</td>
+          <td>let/const, 클래스, 화살표 함수, 템플릿 리터럴, 디스트럭처링 할당, 스프레드</td>
+      </tr>
+      <tr>
+          <td>문법, rest 파라미터, 심벌, 프로미스, Map/Set, 이터러블, for…of,</td>
+      </tr>
+      <tr>
+        <td>제너레이터, Proxy, 모듈 import / export</td>
+      </tr>
+      <tr>
+          <td rowspan="2">ES7(ECMAScript 2016)</td>
+          <td rowspan="2">2016</td>
+          <td>지수(**) 연산자, Array.prototype.includes,</td>
+      </tr>
+      <tr>
+          <td>String.prototype.includes</td>
+      </tr>
+      <tr>
+          <td rowspan="2">ES8(ECMAScript 2017)</td>
+          <td rowspan="2">2017</td>
+          <td>async/await, Object 정적 메서드(Object.values, Object.entries,</td>
+      </tr>
+      <tr>
+        <td>Object.getOwnPropertyDescriptors)</td>
+      </tr>
+      <tr>
+          <td rowspan="2">ES9(ECMAScript 2018)</td>
+          <td rowspan="2">2018</td>
+          <td>Object rest/spread 프로퍼티, Promise.prototype.finally,</td>
+      </tr>
+      <tr>
+          <td>String.prototype.includes</td>
+      </tr>
+      <tr>
+          <td rowspan="2">ES10(ECMAScript 2019)</td>
+          <td rowspan="2">2019</td>
+          <td>Object.fromEntries, Array.prototype.flat,</td>
+      </tr>
+      <tr>
+          <td>Array.prototype.flatMap, optional catch binding</td>
+      </tr>
+      <tr>
+          <td rowspan="3">ES11(ECMAScript 2020)</td>
+          <td rowspan="3">2020</td>
+          <td>String.prototype.matchAll, BigInt, globalThis,</td>
+      </tr>
+      <tr>
+          <td>Promise.allSettled, null 병합 연산자, 옵셔널 체이닝 연산자,</td>
+      </tr>
+      <tr>
+          <td>for…in enumeration order</td>
+      </tr>
+  </tbody>
+</table>
+
+<h3 id="자바스크립트-성장의-역사">자바스크립트 성장의 역사</h3>
+
+<p>초창기 JavaScript는 단순히 HTML과 CSS파일을 렌더링 해주는 역할만 가지고 있었지만 <b>Ajax</b>, <b>V8 자바스크립트 엔진</b>이 등장하면서 기하급수적으로 성장하게 되었고 데스크톱 애플리케이션과 비교해도 손색없는 성능과 사용자 경험을 제공하는 것이 필수가 되었습니다. 개발 규모와 복잡도가 상승하게 되면서 이전의 개발 방식으로는 개발을 수행하기 어려워졌고 이러한 요구에 발맞춰 나온것이 바로 <b>SPA(Single page aplication)</b> 입니다. SPA가 등장하게 되면서 React, Vue, Svelte 등의 다양한 SPA 프레임워크/라이브러리가 생겨났고 현재가지도 많은 사용층을 보유하고 있습니다.</p>
+<p><br></p>
+
+<h4 id="-ajax란">👀 Ajax란</h4>
+
+<blockquote style="margin: 1rem 0px 5rem;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+    <p style="margin: 0">서버와 브라우저가 XMLHttpRequest를 통해  비동기 방식으로 데이터를 교환할 수 있는 통신 기능</p>
+</blockquote>
+
+<h4 id="-v8-자바스크립트-엔진">👀 V8 자바스크립트 엔진</h4>
+
+<blockquote style="margin: 1rem 0px 5rem;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+    <p style="margin: 0">웹 애플리케이션을 구축하려는 시도가 늘면서 더욱 빠르게 동작하는 자바스크립트 엔진의 필요성이 대두되었고 2008년 구글에서 개발한 자바스크립트 엔진입니다. V8 엔진 등장 이후 과거 웹 서버에서 수행되던 로직들이 클라이언트(브라우저)로 이동했고, 웹 애플리케이션 개발 영역에서 프론트엔드 개발 영역이 주목받기 시작하는 계기가 되었습니다. 이후 V8 엔진을 기반으로 만들어진 <b>Node.js</b>의 등장으로 자바스크립트는 브라우저를 벗어나 서버 사이드 애플리케이션(SSR) 개발에서도 사용할 수 있는 범용 프로그래밍 언어가 되었습니다.</p>
+</blockquote>
+
+<h4 id="-nodejs란">👀 Node.js란</h4>
+
+<blockquote style="margin: 1rem 0px 1rem;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+    <p style="margin: 0">2009년 Ryan Dhal이 발표한 구글 V8 자바스크립트 엔진으로 브라우저 이외의 환경에서도 자바스크립트를 동작할 수 있도록 빌드된 자바스크립트 런타임 환경입니다. 주로 서버 사이드 애플리케이션 개발에 사용됩니다.</p>
+</blockquote>
+<p><a style="color: dodgerblue" href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">nodeJS 공식 홈페이지</a></p>
+
+<p><br><br></p>
+
+<h3 id="es6-브라우저-지원-현황">ES6 브라우저 지원 현황</h3>
+
+<p><img style="margin: 2rem auto 1rem" width="1264" alt="스크린샷 2023-01-03 오후 5 53 11" src="https://user-images.githubusercontent.com/76745621/210325539-d24ab7f7-c9f3-4091-b077-8e13793b423c.png"></p>
+<p>참조 : <a style="color: dodgerblue" href="https://caniuse.com/es6" target="_blank" rel="noopener noreferrer">Can I use</a></p>
+<blockquote style="margin: 1rem 0px .5rem;
+    max-width: 768px;
+    word-break: keep-all;
+    border-left: 4px solid #63E6BE;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #1E1E1E;
+    padding: 1rem 1rem 1rem 2rem;
+    color: #ECECEC;">
+    <p style="margin: 0">인터넷 익스플로러를 제외한 모던 브라우저의 대부분은 ES6를 지원하고 있습니다. </p>
+    <p>만약 지원하지 않는 구형 브라우저를 고려해야 하는 상황이라면 Babel과 같은 컴파일러를 사용해야할 필요가 있습니다.</p>
+</blockquote>
+</body></html>

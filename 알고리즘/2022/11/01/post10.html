@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2 id="등차수열의-항-찾기">등차수열의 항 찾기</h2>
+
+<p><br></p>
+
+<h3 id="문제">문제</h3>
+
+<p><br></p>
+<p>입력된 값을 통해서 등차 수열의 몇 번째 항인지를 출력.<br>
+(단, 찾는 항이 없을 경우 -1을 반환)</p>
+<p><br><br></p>
+
+<p><img style="margin: auto 0" width="337" alt="스크린샷 2022-11-01 오후 7 59 12" src="https://user-images.githubusercontent.com/76745621/199218604-eab63efc-33a8-4b9f-b3db-23e0f46c8c43.png"></p>
+
+<p><br><br></p>
+
+<h3 id="풀이과정">풀이과정</h3>
+
+<p><br></p>
+<ol>
+  <li style="word-break: keep-all;">
+    먼저 초항에서 등차값만큼 계속 더해주기 위해서 반복문 for 문을 사용하였고,<br>
+    등차값만큼 더해준 값이 찾고자 하는 등차수열의 항인지를 계속 판별하기 위해서 for 문의 조건은 따로 작성하지 않았습니다.  
+  </li>
+  <br><br>
+  <li style="word-break: keep-all;">
+    등차값과 더한 값이 찾고자 하는 항의 수라면 현재 i값이 찾고자 하는 항의 위치가 될 것이고,<br>
+    만약 찾고자 하는 항의 수가 없다면 -1을 반환합니다.
+  </li>
+  <br><br>
+</ol>
+
+<p><br><br><br></p>
+
+<h3 id="결과">결과</h3>
+
+<p><br>
+<img style="margin: auto 0" width="320" alt="스크린샷 2022-11-01 오후 8 00 40" src="https://user-images.githubusercontent.com/76745621/199218799-4351f53d-ab54-4647-ae4d-632740353b52.png"></p>
+
+<p><br><br><br></p>
+
+<h3 id="다른-풀이">다른 풀이</h3>
+
+<p><br></p>
+
+<p><img style="margin: auto 0" width="423" alt="스크린샷 2022-11-01 오후 7 57 09" src="https://user-images.githubusercontent.com/76745621/199218347-4af61861-be48-4771-930c-48921a85fa62.png"></p>
+
+<p><br><br></p>
+
+<p>조건문 하나만을 사용한 <code class="language-plaintext highlighter-rouge">O(1)</code> 표기법 연산을 통해서<br>
+반복문 forloop 문을 사용하는 <code class="language-plaintext highlighter-rouge">O(n)</code> 보다 더 빠르게 연산이 가능하고<br>
+시간복잡도 측면에서 더 효율적입니다.</p>
+</body></html>
